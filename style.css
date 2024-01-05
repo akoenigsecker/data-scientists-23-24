@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Hind";
+  src: url("assets/fonts/Hind-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hind";
+  src: url("assets/fonts/Hind-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hind";
+  src: url("assets/fonts/Hind-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hind";
+  src: url("assets/fonts/Hind-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hind";
+  src: url("assets/fonts/Hind-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+}
+header .container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  height: 100%;
+}
+header .main-nav ul {
+  display: flex;
+  gap: 20px;
+}
+header .main-nav ul .nav-item a {
+  color: #344154;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.15s ease-in-out;
+}
+header .main-nav ul .nav-item a::after {
+  content: "";
+  background-color: #11234A;
+  display: block;
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: width 0.15s ease-in-out;
+}
+header .main-nav ul .nav-item a.active::after,
+header .main-nav ul .nav-item a:hover::after {
+  width: 100%;
+}
+header .main-nav ul .nav-item a:active {
+  color: #2e5ec6;
+}
+header .main-nav ul .nav-item a:active::after {
+  background-color: #2e5ec6;
+}/*# sourceMappingURL=style.css.map */
