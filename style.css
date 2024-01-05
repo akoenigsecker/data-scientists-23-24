@@ -237,4 +237,137 @@ header .main-nav ul .nav-item a:active::after {
 .btn-outline:hover {
   background-color: #344154;
   color: #DAE0EE;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+h2 {
+  color: #11234A;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.intern-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: #344154;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.content .intern-link {
+  margin-top: 20px;
+}
+
+.content:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #BEC9DA;
+}
+
+.content:not(:first-child) {
+  margin-top: 20px;
+}
+
+aside,
+.card {
+  background-color: #ffffff;
+  border: 1px solid #BEC9DA;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-self: start;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h4 {
+  color: #11234A;
+  font-size: 16px;
+  font-weight: bold;
+}
+h4 span {
+  color: #344154;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.formation p {
+  font-size: 14px;
+}
+
+.aside-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.aside-content.grades {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.aside-content.grades .icon-filled {
+  color: #F4A32A;
+}
+
+.aside-content:last-child {
+  border-top: 1px solid #BEC9DA;
+  padding-top: 20px;
+}
+
+.grade-items.js-grades {
+  cursor: pointer;
+}
+
+.experiences {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.xp-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.xp-header .xp-logo-container {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.xp-header .xp-logo-container.orange {
+  background-color: #FFE9DA;
+}
+.xp-header .xp-logo-container.orange .xp-logo {
+  width: 75px;
+}
+.xp-header .xp-logo-container.blue {
+  background-color: #D3ECFF;
+}
+.xp-header .xp-logo-container.blue .xp-logo {
+  width: 50px;
+}
+.xp-header .xp-header-details h2 {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
