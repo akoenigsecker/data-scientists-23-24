@@ -49,6 +49,17 @@ $border-color: #BEC9DA;
   margin: 0 auto;
 }
 
+body {
+  background-color: $light-grey;
+
+  // Police de base
+  font-family: 'Hind', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+	line-height: 1.4;
+  color: $secondary;
+}
+
 header {
   height: 70px;
 	width: 100%;
@@ -103,4 +114,25 @@ header {
 			}
     }
   }
+}
+
+.logo {
+	font-weight: bold;
+	font-size: 22px;
+	color: $primary;
+
+	&::before {
+		content: "";
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: $primary;
+	}
+}
+
+.header-background {
+	height: 320px;
+	background-image: url('assets/img/header-background.jpg');
+	background-size: cover;
 }
